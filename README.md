@@ -7,9 +7,9 @@ do najnowszej wersji **Quantus Dirac Testnet (v0.4.x)**.
 
 ## 📂 Zawartość repo
 
-- **migracja-dirac.sh** – pełna aktualizacja, build node/miner, backup, generacja kluczy  
-- **node-start.sh** – automatyczny start noda (tmux + watchdog)  
-- **miner-start.sh** – automatyczny start minera (tmux + watchdog)
+- **dirak.sh** – pełna aktualizacja, build node/miner, backup, generacja kluczy  
+- **node.sh** – automatyczny start noda (tmux + watchdog)  
+- **miner.sh** – automatyczny start minera (tmux + watchdog)
 
 ---
 
@@ -18,13 +18,13 @@ do najnowszej wersji **Quantus Dirac Testnet (v0.4.x)**.
 ```bash
 git clone https://github.com/0x477e65/dirak.git
 cd dirak
-chmod +x migracja-dirac.sh node-start.sh miner-start.sh
+chmod +x dirak.sh node.sh miner.sh
 ```
 
 ## 🔧 Migracja na Dirac
 
 ```bash
-./migracja-dirac.sh
+./dirak.sh
 ```
 
 ## Skrypt automatycznie: 
@@ -59,12 +59,12 @@ Musisz używać nowo wygenerowanego adresu rewards.
 ## ▶️ Uruchamianie noda i minera
 
 ```bash
-./node-start.sh
+./node.sh
 tmux attach -t quantus-node
 ```
 
 **Miner:**
 ```bash
-./miner-start.sh
+./miner.sh
 tmux attach -t quantus-miner
 ```
